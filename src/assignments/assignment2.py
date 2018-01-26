@@ -10,14 +10,13 @@ def faculty_evaluation_result(nev, rar, som, oft, voft, alw):
     :param alw: Always
     :return: rating as a string
     '''
-	
-	totalratio = nev+rar+som+oft+voft+alw:
-	nev_ratio = nev/totalratio:
-	rar_ratio = rar/totalratio:
-	som_ratio = som/totalratio:
-	oft_ratio = oft/totalratio:
-	voft_ratio = voft/totalratio:
-	alw_ratio = alw/totalratio:
+    totalratio = nev+rar+som+oft+voft+alw:
+    nev_ratio = nev/totalratio:
+    rar_ratio = rar/totalratio:
+    som_ratio = som/totalratio:
+    oft_ratio = oft/totalratio:
+    voft_ratio = voft/totalratio:
+    alw_ratio = alw/totalratio:
 	
 	if (alw_ratio + voft_ratio) >= 0.9:
 		return 'excellent'

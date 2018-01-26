@@ -10,28 +10,28 @@ def faculty_evaluation_result(nev, rar, som, oft, voft, alw):
     :param alw: Always
     :return: rating as a string
     '''
-    totalratio = nev+rar+som+oft+voft+alw:
-    nev_ratio = nev/totalratio:
-    rar_ratio = rar/totalratio:
-    som_ratio = som/totalratio:
-    oft_ratio = oft/totalratio:
-    voft_ratio = voft/totalratio:
-    alw_ratio = alw/totalratio:
+    totalratio = nev+rar+som+oft+voft+alw
+    nev_ratio = nev/totalratio
+    rar_ratio = rar/totalratio
+    som_ratio = som/totalratio
+    oft_ratio = oft/totalratio
+    voft_ratio = voft/totalratio
+    alw_ratio = alw/totalratio
 	
-	if (alw_ratio + voft_ratio) >= 0.9:
-		return 'excellent'
+    if (alw_ratio + voft_ratio) >= 0.9:
+	return 'excellent'
 	
-	elif (oft_ratio+voft_ratio+alw_ratio) >= .80:
-		return 'very good'
+    elif (oft_ratio+voft_ratio+alw_ratio) >= .80:
+	return 'very good'
 	
-	elif (som_ratio+oft_ratio+voft_ratio+alw_ratio) >= .70:
-		return 'good'
+    elif (som_ratio+oft_ratio+voft_ratio+alw_ratio) >= .70:
+	return 'good'
 	
-	elif (rar_ratio+som_ratio+oft_ratio+voft_ratio+alw_ratio) >= .60:
-		return 'needs improvement'
+    elif (rar_ratio+som_ratio+oft_ratio+voft_ratio+alw_ratio) >= .60:
+	return 'needs improvement'
 	
-	else :
-		return 'unacceptable':
+    else :
+	return 'unacceptable'
 def get_ratings(nev,rar,som, oft,voft, alw):
     '''
     Students aren't expected to know this material yet!

@@ -18,19 +18,19 @@
     voft_ratio = voft/totalratio
     alw_ratio = alw/totalratio
 	
-    if (alw_ratio + voft_ratio) >= 0.9:
+   if (alw_ratio + voft_ratio) >= 0.9:
 	return 'excellent'
 	
-    elif (oft_ratio+voft_ratio+alw_ratio) >= .80:
+   elif (oft_ratio+voft_ratio+alw_ratio) >= .80:
 	return 'very good'
 	
-    elif (som_ratio+oft_ratio+voft_ratio+alw_ratio) >= .70:
+   elif (som_ratio+oft_ratio+voft_ratio+alw_ratio) >= .70:
 	return 'good'
 	
-    elif (rar_ratio+som_ratio+oft_ratio+voft_ratio+alw_ratio) >= .60:
+   elif (rar_ratio+som_ratio+oft_ratio+voft_ratio+alw_ratio) >= .60:
 	return 'needs improvement'
 	
-    else :
+   else :
 	return 'unacceptable'
 def get_ratings(nev,rar,som, oft,voft, alw):
     '''

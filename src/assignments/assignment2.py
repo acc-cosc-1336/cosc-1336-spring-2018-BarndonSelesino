@@ -1,4 +1,4 @@
->>> def faculty_evaluation_result(nev, rar, som, oft, voft, alw):
+ def faculty_evaluation_result(nev, rar, som, oft, voft, alw):
     '''
     Write code to calculate faculty evaluation rating according to asssignment instructions
 	

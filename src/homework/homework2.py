@@ -31,16 +31,15 @@ def get_time(hour, minutes, seconds, time_type, meridiem='AM'):
         #write decision structure code here
 
         if time_type == 24:
+            hour <= 12 and hour >= 1:
 
         elif time_type == 12:
-
+            hour <= 23 and hour >= (1,12):
         else:
             return 'Invalid time_type(12 or 24 only)'
-        if hour > 24 or hour < 0:
-          print('Invalid hours')
-        time_type12 = hour <= 12 and hour >= 1:
 
-        time_type24 = hour <= 23 and hour >= (1,12):
+
+        
 
     
 

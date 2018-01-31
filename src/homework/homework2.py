@@ -22,41 +22,34 @@ def get_time(hour, minutes, seconds, time_type, meridiem='AM'):
     ADD YOUR CODE AFTER THE THREE QUOTES BELOW (dont forget to include a return statement at the end
     '''
 
-        if minutes > 59 or minutes < 0:
-          return 'Invalid minutes(range 0-59)'
-        
-        if seconds > 59 or seconds < 0:
-          return 'Invalid seconds(range 0-59)'
-        time = ''
-        #write decision structure code here
+    if minutes > 59 or minutes < 0:
+      return 'Invalid minutes(range 0-59)'
 
-        if time_type == 24:
-            hour <= 12 and hour >= 1:
+    if seconds > 59 or seconds < 0:
+      return 'Invalid seconds(range 0-59)'
+    time = ''
+    #write decision structure code here
 
-        elif time_type == 12:
-            hour <= 23 and hour >= (1,12):
-        else:
-            return 'Invalid time_type(12 or 24 only)'
+    if time_type == 24:
+       if hour < 0 or hour > 23:
+        return 'Invalid hours(range 0-23)'
+    elif time_type == 12:
+       if hour < 0 or hour > 12:
+           return 'Invalid hours(range 1-12)'
+    else:
+        return 'Invalid time_type(12 or 24 only)'
 
+    if hour < 10:
+      hour = "0" + str(hour)
+    if minutes < 10:
+      minutes = "0" + str(minutes)
+    if seconds < 10:
+      seconds = "0" + str(seconds)
 
-        
+    time = str(hour) + ':'+ str(minutes) + ':' + str(seconds)
 
-    
-
-
-        if hour < 10
-          hour = "0" + str(hour)
-        if minute < 10
-          minute = "0" + str(minute)
-        if second < 10
-          second = "0" + str(second)
-
-        time = (hour + ':'+ minute + second)
-        
-    
-  
- get_time(): 
- 
+    if time_type == 12:
+        time = time + ' ' + meridiem
 
     return  time
 

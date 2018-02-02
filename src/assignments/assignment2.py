@@ -1,4 +1,4 @@
- def faculty_evaluation_result(nev, rar, som, oft, voft, alw):
+def faculty_evaluation_result(nev, rar, som, oft, voft, alw):
     '''
     Write code to calculate faculty evaluation rating according to asssignment instructions
 	
@@ -18,20 +18,21 @@
     voft_ratio = voft/totalratio
     alw_ratio = alw/totalratio
 	
-   if (alw_ratio + voft_ratio) >= 0.9:
-	return 'excellent'
-	
-   elif (oft_ratio+voft_ratio+alw_ratio) >= .80:
-	return 'very good'
-	
-   elif (som_ratio+oft_ratio+voft_ratio+alw_ratio) >= .70:
-	return 'good'
-	
-   elif (rar_ratio+som_ratio+oft_ratio+voft_ratio+alw_ratio) >= .60:
-	return 'needs improvement'
-	
-   else :
-	return 'unacceptable'
+    if (alw_ratio + voft_ratio) >= 0.9:
+        return 'Excellent'
+        
+    elif (oft_ratio+voft_ratio+alw_ratio) >= .80:
+        return 'Very Good'
+        
+    elif (som_ratio+oft_ratio+voft_ratio+alw_ratio) >= .70:
+        return 'Good'
+        
+    elif (rar_ratio+som_ratio+oft_ratio+voft_ratio+alw_ratio) >= .60:
+        return 'Needs Improvement'
+        
+    else :
+        return 'Unacceptable'
+
 def get_ratings(nev,rar,som, oft,voft, alw):
     '''
     Students aren't expected to know this material yet!

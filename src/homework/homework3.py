@@ -60,8 +60,8 @@ def main1():
     DON'T ADD A RETURN STATEMENT TO THIS FUNCTION
     '''
 #write your code here
-number = int(input("please enter a loop number:    "))
-resulta = sum_odd_numbers(number)
-print(result)
-resulta = list_of_even_numbers(number)
-print(resulta)
+    number = int(input("please enter a loop number:    "))
+    result = sum_odd_numbers(number)
+    print(result)
+    resulta = list_of_even_numbers(number)
+    print(resulta)

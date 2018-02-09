@@ -1,7 +1,7 @@
 import unittest
 
-from src.assignment.assignment4 import sample_function
-from src.assignment.assignment4 import factorial
+from src.assignments.assignment4 import sample_function
+from src.assignments.assignment4 import factorial
 
 class Test_Assign4(unittest.TestCase):
 

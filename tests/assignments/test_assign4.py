@@ -34,6 +34,6 @@ class Test_Assign4(unittest.TestCase):
 
 
 #remove the pound sign at the beginning of the next statement to run tests locally.
-unittest.main(verbosity=2)
+
 #add the pound sign back before uploading to Github
 

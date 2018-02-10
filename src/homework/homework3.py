@@ -59,9 +59,11 @@ def main1():
 
     DON'T ADD A RETURN STATEMENT TO THIS FUNCTION
     '''
-#write your code here
+    #write your code here
     number = int(input("please enter a loop number:    "))
-    result = sum_odd_numbers(number)
-    print(result)
-    resulta = list_of_even_numbers(number)
-    print(resulta)
+    
+    for i in range(1, number+1):
+        result = sum_odd_numbers(i)
+        print(result)
+        resulta = list_of_even_numbers(i)
+        print(resulta)

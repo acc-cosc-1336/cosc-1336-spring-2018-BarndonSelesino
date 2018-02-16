@@ -21,14 +21,13 @@ def main():
     gpa2 = 0
 
 #class selection
-    for q in range(1,number_of_students+1):
-        classes = int(input('How many classes did the students take' +str(q)))
-        credit_s = 0
-        gpa2 = 0
+    classes = int(input('How many classes did the students take?'))
+    credit_s = 0
+    gpa2 = 0
 
 #grade selection
     for v in range(1, classes+1):
-        entered_grade = int(input('Please enter letter grade ' +str(v) + ':' ))
+        entered_grade = (input('Please enter letter grade ' +str(v) + ':' )
         while valid_letter_grade(str(entered_grade)) != True:
             entered_grade = input('Enter a valid grade: (A,B,C,D, or F):     ')
 #conclusion of program
@@ -37,8 +36,9 @@ def main():
         credit_s += credit_hours
         grade_points = get_grade_points(credit_hours,entered_grade)
         gpa2 += grade_points
-        gpa = get_grade_point_average(credit_s,gpa2)
-    print('the student ' +str(q) + 's gpa is:  ' + "%.01f" % gpa)                       
+    
+    gpa = get_grade_point_average(credit_s,gpa2)
+    print('the student ' +str(q) + 's gpa is:  ' + "%.2f" % gpa)                       
                            
                     
                             

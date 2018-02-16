@@ -31,4 +31,3 @@ class Test_Assign4(unittest.TestCase):
 
 
 
-unittest.main(verbosity=2)

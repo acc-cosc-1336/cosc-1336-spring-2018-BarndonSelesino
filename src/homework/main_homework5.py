@@ -24,16 +24,16 @@ def main():
 #defining sum and avg
     sum_of_price = sum(price)
 
-    for num_of_sales in range(1, num_of_sales +1)
+    for num_of_sales in range(1, num_of_sales +1):
         avg_price = sum_of_price / num_of_sales
 #opening file for writing
-    outfile = open('salesrecords' , 'w')
+    outfile = open('salesrecords.txt' , 'w')
 #defining item name and price
-    for itemname in salesrecords:
-        outfile.write(itemname + '\n')
+    for item in salesrecords:
+        outfile.write(item + '\n')
     for price in salesrecords:
         outfile.write(price + '\n')
-    outfile.writeline(itemname, price)
+    outfile.writeline(item, price)
 
 #sum of price
     
@@ -43,10 +43,20 @@ def main():
 
 #avg of price
     for avg_price in salesrecords:
-        outfile.write(avg_price + '/n')
+        outfile.write(avg_price + '\n')
     outfile.writeline(avg_price)
 
 #Reading a file now
-    infile = open('salesrecords' , 'r')
-    in
+    infile = open('salesrecords.txt' , 'r')
+#closing file
+    infile.close()
+#stripping /n
+    index = 0
+    while index < len(salesrecords):
+        salesrecords[index] = salesrecords[index].rstrip('\n')
+        index += 1
+#printing the program
+    print(salesrecords)
+main()
+    
     

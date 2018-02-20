@@ -23,10 +23,8 @@ def main():#void function
             num = int(input('Please enter number:     '))
         answer = factorial(num)
         print(answer)
-    else:
-            print("You messed up")
 
-    dont_stop = input("would you like to continue")  
+        dont_stop = input("would you like to continue")  
 
                   
                     

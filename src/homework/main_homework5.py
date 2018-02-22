@@ -1,3 +1,4 @@
+
 #write the import statements for homework5 functions
 
 #With the functions created in homework5...
@@ -10,53 +11,34 @@
 
 #Open a file for text reading.
 #Read the saved file and output table
+
 from homework5 import (write_sales_data, read_sales_data)
 
-#defining sales records
+
 def main():
-    salesrecords = ['price', 'itemname']
+#defining sales_record
+    infile = open('sales_records.txt', 'w')
+    infile.write('name' + '\t' + 'price' + '\n')
+    num_of_items = int(input("Enter number of items: "))
 
-#defining amount of sales
-
-    num_of_sales = int(input("Please enter the amount of total sales:    "))
-
-
-#defining sum and avg
-    sum_of_price = sum(price)
-
-    for num_of_sales in range(1, num_of_sales +1):
-        avg_price = sum_of_price / num_of_sales
-#opening file for writing
-    outfile = open('salesrecords.txt' , 'w')
-#defining item name and price
-    for item in salesrecords:
-        outfile.write(item + '\n')
-    for price in salesrecords:
-        outfile.write(price + '\n')
-    outfile.writeline(item, price)
-
-#sum of price
-    
-    for sum_of_price in salesrecords:
-        outfile.write(sum_of_price + '\n')
-    outfile.writeline(sum_of_price)
-
-#avg of price
-    for avg_price in salesrecords:
-        outfile.write(avg_price + '\n')
-    outfile.writeline(avg_price)
-
-#Reading a file now
-    infile = open('salesrecords.txt' , 'r')
-#closing file
+#defining price, itemnames
+    tnoi = 0
+    for items in range(1, num_of_items+1):
+        item = input('Enter name of item: ')
+        price = float(input('Enter price of item: '))
+        infile.write(str(item)+ '\t')
+        infile.write(str("{0:.2f}".format(price))+ '\n')
+        tnoi += price
+#definingtotal
+    infile.write('total' + '\t'+ str("{0:.2f}".format(tnoi))+ '\n')
+    avg = tnoi / num_of_items
+    infile.write('Avg' + '\t'+ str("{0:.2f}".format(avg)))
     infile.close()
-#stripping /n
-    index = 0
-    while index < len(salesrecords):
-        salesrecords[index] = salesrecords[index].rstrip('\n')
-        index += 1
-#printing the program
-    print(salesrecords)
+#readingeverything        
+    infile = open('sales_records.txt', 'r')
+    file_contents = infile.read()
+    infile.close()
+    print(file_contents)
+        
 main()
-    
-    
+

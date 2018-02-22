@@ -3,25 +3,18 @@
 
 #Create another function named read_sales_data with file_object as a parameter.
 #The function will read the file line by line and display to screen to produce the table described in homework 5.
-def write_sales_data(file_object,item,price)
-    file_object = ['']
-        outfile = open('salesrecords.txt', 'w')
-        for file_object in salesrecords:
-            outfile.write(file_object + '\n')
-        outfile.close()
-# item and price
-    item = ['']
-        outfile = open('salesrecords.txt', 'w')
-        for item in salesrecords:
-            outfile.write(items + '\n')
-        outfile.close()
-    price = ['']
-        outfile = open('salesrecords.txt', 'w')
-        for price in salesrecords:
-            outfile.write(price + '\n')
-        outfile.close()
-write_sales_data()
+def write_sales_data(file_object,item,price):
+    #cut out file_object in writesalesdata because it was causing errors
+    infile = open('sales_records.txt', 'w')
+    item = ''
+    price = ''
+    infile.write(item + '\t' + price)
+    infile.close()
 
-def read_sales_data(file_object)    
-    infile = open('salesrecords.txt', r)
-    file_object
+
+
+def read_sales_data(file_object):    
+    infile = open('sales_records.txt', 'r')
+    file_contents = infile.read()
+    infile.close()
+    return(file_contents)

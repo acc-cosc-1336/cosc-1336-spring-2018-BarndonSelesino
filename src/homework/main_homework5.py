@@ -12,7 +12,7 @@
 #Open a file for text reading.
 #Read the saved file and output table
 
-from homework5 import (write_sales_data, read_sales_data)
+from src.homework.homework5 import (write_sales_data, read_sales_data)
 
 
 def main():

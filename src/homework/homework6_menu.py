@@ -1,4 +1,10 @@
 #write import statements for homework 6 functions
+from homework6 import get_point_mutations
+from homework6 import get_dna_complement
+from homework6 import transcribe_dna_into_rna
+from homework6 import get_gc_content
+
+
 
 def menu_options():
     print()
@@ -32,9 +38,9 @@ def run_menu():
         elif option == 4:
             handle_option_4()
         elif option == 5:
-            handle_option_5()
+            print('unfinished')
         elif option == 6:
-            handle_option_6()
+            print('unfinished')
 
 
 def handle_option_1():
@@ -45,18 +51,40 @@ def handle_option_1():
     Call the function get_point_mutations and display the mutations to screen.
     Ask user if they want to continue.
     '''
+    dont_stop = 'y'
+    while dont_stop == 'y':
+        DNA_string_1 = input('Enter a DNA-code using letters A, C, G and T: ')
+        DNA_string_2 = input('Enter another DNA-code using the same letters: ')
+        mutations = get_point_mutations(DNA_string_1, DNA_string_2)
+        print(mutations)
+        dont_stop = input('Do you want to continue? Y/N: ')
 
 def handle_option_2():
     '''
     Write code to read the file dna_complement.dat.
     For each line string call the function get_dna_complment and display the complement to screen.
-    '''
+    '''    
+    file_object = open('dna_complement.dat', 'r')
+    for line in file_object:
+        string_read = line.rstrip('\n')
+        print('Original DNA string: ', '\t', string_read)
+        get_DNA = get_dna_complement(string_read)
+        print('DNA complement string: ', get_DNA)
+        print()
+        
 
 def handle_option_3():
     '''
     Write the code to read the file transcribe_dna_to_rna.dat.
     For each line string call the function transcribe_dna_to_rna and display rna to screen.
     '''
+    file_object = open('transcribe_dna_to_rna.dat', 'r')
+    for line in file_object:
+        string_read = line.rstrip('\n')
+        print('DNA string: ', string_read)
+        RNA = transcribe_dna_into_rna(string_read)
+        print('RNA string: ', RNA)
+        print()
 
 def handle_option_4():
     '''
@@ -64,7 +92,12 @@ def handle_option_4():
     call the get_gc_content function with the line string as an argument.
     Display the gc_content for each line.
     '''
-
+    file_object = open('compute_gc_content.dat', 'r')
+    for line in file_object:
+        string_read = line.rstrip('\n')
+        gc_content = get_gc_content(string_read)
+        print(format(gc_content, ".5f"))
+        
 def handle_option_5():
     pass #optional 
 

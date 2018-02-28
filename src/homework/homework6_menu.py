@@ -58,7 +58,7 @@ def handle_option_1():
         mutations = get_point_mutations(DNA_string_1, DNA_string_2)
         print(mutations)
         dont_stop = input('Do you want to continue? Y/N: ')
-
+        
 def handle_option_2():
     '''
     Write code to read the file dna_complement.dat.
@@ -97,7 +97,7 @@ def handle_option_4():
         string_read = line.rstrip('\n')
         gc_content = get_gc_content(string_read)
         print(format(gc_content, ".5f"))
-        
+       
 def handle_option_5():
     pass #optional 
 

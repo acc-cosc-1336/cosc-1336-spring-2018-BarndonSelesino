@@ -1,6 +1,6 @@
 import unittest
 #write the import for function for assignment7 sum_list_values
-from src.assignment.assignment7 import sum_list_values
+from src.assignments.assignment7 import sum_list_values
 
 class Test_Assign7(unittest.TestCase):
 

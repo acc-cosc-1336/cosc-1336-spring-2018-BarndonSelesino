@@ -1,5 +1,5 @@
 #write import statement for reverse string function
-from exam import reverse_string
+from src.midterm.exam import reverse_string
 '''
 10 points
 Write a main function to ....

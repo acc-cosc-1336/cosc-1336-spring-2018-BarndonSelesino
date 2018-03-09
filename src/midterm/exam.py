@@ -56,7 +56,7 @@ CREATE A TEST CASE IN THE exam_test.py file.
 def reverse_string(string1):
     while string1 > 1:
     reversedstring = string1[::-1]
-    return reversedstring
+    return (reversedstring)
 
 
 

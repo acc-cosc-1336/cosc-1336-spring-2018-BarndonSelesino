@@ -1,6 +1,6 @@
 import unittest
 #write the import for function for assignment8 add_inventory
-from homework8 import add_inventory, remove_inventory_widget
+from src.homework.homework8 import add_inventory, remove_inventory_widget
 
 
 class Test_Assign8(unittest.TestCase):

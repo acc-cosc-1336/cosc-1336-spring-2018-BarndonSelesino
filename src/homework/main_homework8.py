@@ -1,4 +1,4 @@
-from src.homework.homework8 import add_inventory, remove_inventory_widget
+from homework8 import add_inventory, remove_inventory_widget
 import pickle
 '''
 Write a main function to create an empty dictionary and

@@ -35,6 +35,6 @@ class Test_Assign8(unittest.TestCase):
         remove_inventory_widget(self.widgets, 'Widget0')
         self.assertEqual(0, self.widgets.get('Widget0', 0))
 
-if __name__ == '__main__':
-    unittest.main(verbosity = 2)
+#if __name__ == '__main__':
+ #   unittest.main(verbosity = 2)
 

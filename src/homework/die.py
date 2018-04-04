@@ -1,5 +1,5 @@
 #Write an import statement for the Python random module
-
+from ____ import
 '''
 Create a Die class to model a game day with 6 sides and values 1,2,3,4,5, and 6.
 

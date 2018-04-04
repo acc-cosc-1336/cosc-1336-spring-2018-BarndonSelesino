@@ -1,5 +1,5 @@
 #write import statement for Die class
-
+from die import
 '''
 Create a Player class.
 

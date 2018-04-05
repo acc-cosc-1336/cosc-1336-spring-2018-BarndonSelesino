@@ -9,7 +9,7 @@ class TestHomework9(unittest.TestCase):
         Write a test case to ensure that the Die class only rolls values from 1 to 6
 
         '''
-        self.dicetest = Die()
+        self.dicetest = Die
         self.assertTrue(range(1,6), self.dicetest.roll())
         
 

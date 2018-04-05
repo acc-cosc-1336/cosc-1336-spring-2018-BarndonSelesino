@@ -1,5 +1,5 @@
 #write import statement for Die class
-from die import Die
+from src.homework.homework9.die import Die
 '''
 Create a Player class.
 

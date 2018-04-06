@@ -24,15 +24,15 @@ Create a user controlled loop to continue until y is not typed, in loop...
 customer = Customer('firstname','lastname','512-785-7112')
 
 
+
+
 invoice = Invoice(customer)
 
 keep_going = 'y'
 
 while keep_going == 'y':
 
-    self.first = input("Enter firstname: ")
-    self.last = int(input("Enter lastname: "))
-    self.phone_number = float(input("Enter PN: "))
+    
 
     #ASSIGNMENT10: Create a product object and add description and cost as parameter arguments.
     #Quantity parameter remains same.
@@ -41,7 +41,7 @@ while keep_going == 'y':
 
 
 
-    invoice.add_invoice_item(InvoiceItem(description, quantity, cost)
+    invoice.add_invoice_item(InvoiceItem(product, quantity)
 
     keep_going = input("Enter another type y: ")
 

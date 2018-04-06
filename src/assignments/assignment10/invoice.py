@@ -1,6 +1,6 @@
 #ASSIGNMENT10 write import statement for customer class
-from customer import Customer
-from product import Product
+from src.assignments.assignment9.customer import Customer
+from src.assignments.assignment9.product import Product
 import unittest
 class Invoice:
 

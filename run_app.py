@@ -1,4 +1,4 @@
-import src.homework.homework9.main(10)
+import src.assignments.main
 
 #running this file will run the code in main_homework2.py file without the need to modify
 #code in that file

@@ -1,4 +1,4 @@
-from product import Product
+from src.assignments.assigmnent10.product import Product
 import unittest
 
 class InvoiceItem:

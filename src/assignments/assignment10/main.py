@@ -32,7 +32,7 @@ keep_going = 'y'
 
 while keep_going == 'y':
 
-    
+    print('Iamhappy')
 
     #ASSIGNMENT10: Create a product object and add description and cost as parameter arguments.
     #Quantity parameter remains same.
@@ -40,8 +40,7 @@ while keep_going == 'y':
     
 
 
-
-    invoice.add_invoice_item(InvoiceItem(product, quantity)
+    invoice.add_invoice_item(InvoiceItem(product, quantity))
 
     keep_going = input("Enter another type y: ")
 

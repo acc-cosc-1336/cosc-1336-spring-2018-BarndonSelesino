@@ -1,33 +1,54 @@
-#Write import statements for classes invoice and invoice_item
-from src.assignments.invoice import Invoice
-from src.assignments.invoice_item import InvoiceItem
+#Write import statements for classes invoice and invoice_item and PRODUCT
+from invoice import  Invoice
+from invoice_item import  InvoiceItem
+from product import Product
+from customer import Customer
+import unittest
+#ASSIGNMENT10 Write import statements for classes product and customer
+
 
 '''
 LOOK AT THE TEST CASES FOR HINTS
-Create an invoice object
+Create an invoice object 
+
 In the loop:
-Create a new InvoiceItem
 Create a user controlled loop to continue until y is not typed, in loop...
     Prompt user for description, quantity, and cost.
+    Create a new InvoiceItem, use the newly created product as a parameter argument 
     Add values to the InvoiceItem.
     Add the InvoiceItem to the invoice object.
     Once user types a letter other than y display the Invoice to screen
 '''
-invoice_items = []
-def Main():
-    invoice = Invoice('blah', '14')
-    hiya = 'y'
-    while hiya == 'y' or hiya == "Y":
-        description = input('enter description:   ')
-        quantity = int(input('enter quantity:   '))
-        cost = float(input('Enter cost:   '))
+#ASSIGNMENT10: Make sure to change invoice bill_to argument to an instance of a Customer class 
 
-        invoice_item = InvoiceItem(description, quantity, cost)
-        invoice.add_invoice_item(invoice_item)
-        hiya = input('type y to continue...')
-        if hiya != 'y':
-            invoice.print_invoice()
-Main()
+customer = Customer('firstname','lastname','512-785-7112')
+
+
+invoice = Invoice(customer)
+
+keep_going = 'y'
+
+while keep_going == 'y':
+
+    self.first = input("Enter firstname: ")
+    self.last = int(input("Enter lastname: "))
+    self.phone_number = float(input("Enter PN: "))
+
+    #ASSIGNMENT10: Create a product object and add description and cost as parameter arguments.
+    #Quantity parameter remains same.
 
     
-    
+
+
+
+    invoice.add_invoice_item(InvoiceItem(description, quantity, cost)
+
+    keep_going = input("Enter another type y: ")
+
+
+invoice.print_invoice()
+
+
+if __name__ == "__main__":
+    unittest.main()
+

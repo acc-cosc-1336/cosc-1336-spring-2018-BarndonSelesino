@@ -1,6 +1,6 @@
 #write import statement for Die class
-from diehw10 import Die
-from score_entry import ScoreEntry
+from src.homework.hw10.diehw10 import Die
+from src.homework.hw10score_entry import ScoreEntry
 
 
 '''

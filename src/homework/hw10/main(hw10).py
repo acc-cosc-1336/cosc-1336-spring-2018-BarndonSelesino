@@ -1,6 +1,6 @@
-from playerhw10 import Player
+from src.homework.hw10.playerhw10 import Player
 #write import statement for GameLog class
-from game_log import GameLog
+from src.homework.hw10.game_log import GameLog
 
 #Create a game log instance
 gl = GameLog()

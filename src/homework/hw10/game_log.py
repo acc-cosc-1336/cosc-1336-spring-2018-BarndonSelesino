@@ -1,5 +1,5 @@
 #write import statement for ScoreEntry
-from score_entry import ScoreEntry
+from src.homework.hw10.score_entry import ScoreEntry
 #1create a class named GameLog with a parameterless constructor-create an empty list of score_entries class attribute in
 # constructor
 #2Create a class method add_score_entry with a score_entry parameter, in the method code append the score_entry parameter

@@ -1,4 +1,5 @@
 #HOMEWORK12: add import statement for Die class
+from die import Die
 '''
 Define a Die6 class that inherits from the Die class.
 Create a constructor with only one parameter self.
@@ -9,3 +10,11 @@ In the method:
  b)call and return the Die class roll method(This will return the roll value).
 
 '''
+#1
+class Die8(Die):
+    def __init__(self):
+      Die.__init__(self,8)
+#2
+    def roll(self):
+        print('Rolled 8 sided die', self.sides)
+        return Die.roll(self)

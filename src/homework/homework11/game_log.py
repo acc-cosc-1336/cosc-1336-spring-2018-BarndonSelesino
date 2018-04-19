@@ -1,4 +1,4 @@
-from src.homework.homework11.score_entry import ScoreEntry
+from score_entry import ScoreEntry
 
 class GameLog:
 

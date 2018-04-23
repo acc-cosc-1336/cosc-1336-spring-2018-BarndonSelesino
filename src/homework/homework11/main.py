@@ -22,7 +22,7 @@ game_log.display_log()
 #ASSIGNMENT12: Create a new instance of the Player class and pass it the game log, die6, and die8 instances.
 #ASSIGNMENT12: Call the player instance roll_doubles.
 #ASSIGNMENT12: Call the game log instance display_log method.
-
+game_log = GameLog()
 
 
 die6_2 = Die6()

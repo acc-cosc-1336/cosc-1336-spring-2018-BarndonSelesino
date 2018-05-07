@@ -1,4 +1,4 @@
-def get_pdist(eg1,eg2):
+def get_pdist(eg1):
     length = len(eg1)
     count = c
     c = 0

@@ -9,7 +9,17 @@ class TestHomework7(unittest.TestCase):
         self.assertEqual(1,1)
 
     #create a test for get p distance matrix with following data
+    def test_get_p_distance_matrix(self):
+        self.assertEqual([[0, 0.40, 0.10, 0.10], [0.40, 0, 0.40, 0.30], [0.10, 0.40, 0, 0.20], [0.10, 0.30, 0.20, 0]],get_p_distance_matrix([
+ ['T','T','T','C','C','A','T','T','T','A'],
+ ['G','A','T','T','C','A','T','T','T','C'],
+ ['T','T','T','C','C','A','T','T','T','T'],
+ ['G','T','T','C','C','A','T','T','T','A']
+]))
+    
+    
     '''
+    
     Sample Dataset
     [
      ['T','T','T','C','C','A','T','T','T','A'],

@@ -9,7 +9,7 @@ class TestHomework7(unittest.TestCase):
              ['G','A','T','T','C','A','T','T','T','C']))) 
 
     def test_get_p_distance_matrix(self):
-        dna = [['T','T','T','C','C','A','T','T','T','A'],\
+        fake_dna = [['T','T','T','C','C','A','T','T','T','A'],\
              ['G','A','T','T','C','A','T','T','T','C'],\
              ['T','T','T','C','C','A','T','T','T','T'],\
              ['G','T','T','C','C','A','T','T','T','A']]

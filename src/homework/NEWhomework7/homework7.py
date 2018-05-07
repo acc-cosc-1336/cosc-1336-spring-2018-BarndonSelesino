@@ -4,7 +4,7 @@ def get_pdist(eg1):
     c = 0
     for i in range(len(eg1)):
         c +=1
-    return format(c/len(list1))
+    return format(c/len(eg1))
 
 def get_p_distance_matrix(dna):
     pdist = [[0,0,0,0][0,0,0,0][0,0,0,0][0,0,0,0]]

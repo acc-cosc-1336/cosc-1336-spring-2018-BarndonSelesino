@@ -5,7 +5,7 @@ from src.homework.NEWhomework7.homework7 import get_pdist, get_p_distance_matrix
 
 class TestHomework7(unittest.TestCase):
     def test_p_distance(self):
-        self.assertEqual(.4, get_pdist(( ['T','T','T','C','C','A','T','T','T','A'],\
+        self.assertEqual(.get_pdist(( ['T','T','T','C','C','A','T','T','T','A'],\
              ['G','A','T','T','C','A','T','T','T','C']))) 
 
     def test_get_p_distance_matrix(self):

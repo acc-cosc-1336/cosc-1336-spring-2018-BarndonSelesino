@@ -22,7 +22,7 @@ class TestHomework7(unittest.TestCase):
 
 
     def test_sample(self):
-        self.assertEqual(1,1)
+        self.assertEqual(get_pdist,get_p_distance_matrix)
 
     #create a test for get p distance matrix with following data
     '''

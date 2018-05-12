@@ -1,12 +1,8 @@
-from employee import Employee
-from salaried_employee import SalariedEmployee
-from hourly_employee import HourlyEmployee
+from src.final_exam.q_employee.hourly_employee import HourlyEmployee
+from src.final_exam.q_employee.salaried_employee import SalariedEmployee
 
+employees = {1: HourlyEmployee(1, 'joe', 10, 80), 2:SalariedEmployee(2, 'Mike', 80000)}
 
+for e in employees.values():
+    print(format(e.calculate(), '.2f'))
 
-employees.hourly_rate = {1:'joe'(10,80)}
-employees.salaried_employee = {2:'Mike'(80000)}
-
-
-for e in employee.hourly_rate:
-    print(e.calculate)

@@ -1,7 +1,11 @@
-class SalariedEmployee:
-    def __init__(self,yearly_rate):
+from src.final_exam.q_employee.employee import Employee
+
+class SalariedEmployee(Employee):
+
+    def __init__(self,employee_id, name, yearly_rate):
+        Employee.__init__(self, employee_id, name)
         self.yearly_rate = yearly_rate
 
-    def calculate_bw_rate(self):
-        return yearly_rate / 26
-        #52 weeks in a year, biweekly makes 26 weeks
+    def calculate(self):
+        return self.yearly_rate / 26
+

@@ -29,7 +29,7 @@ def process_list(value_list):
 def main():
     continue_loop == 'Y'
     while continue_loop == 'Y':
-        value_list = {}
+        value_list = []
         value_list.append(input('name:       '))
         num_values = int(input('Please enter the number of values:      '))
         for i in range (0, num_values+1):

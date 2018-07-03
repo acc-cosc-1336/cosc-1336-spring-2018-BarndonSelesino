@@ -20,6 +20,8 @@ def sum_list_values(value_list):
     index = 1
     while index < len (value_list):
         total += value_list[index]
+        index += 1
+        
     return(total)
   
 

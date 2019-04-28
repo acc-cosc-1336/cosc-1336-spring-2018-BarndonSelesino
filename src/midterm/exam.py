@@ -8,7 +8,7 @@ RUN THE PROVIDED TEST CASES TO VALIDATE YOUR CODE
 '''
 def get_miles_per_hour(kilometers, total_minutes):
     hours = total_minutes / 60
-    return(miles/hours ** .621371)
+    return(miles/hours * .621371)
 
 
 
@@ -28,13 +28,13 @@ Return Value:
 '''
 def get_bonus_pay_amount(sales):
     if sales >= 0 and sales <= 499:
-        return (sales ** .05)
+        return (sales * .05)
     elif sales >= 499 and sales <= 999:
-        return (sales ** .06)
+        return (sales * .06)
     elif sales >= 999 and sales <= 1499:
-        return (sales ** .07)
+        return (sales * .07)
     elif sales >= 1499 and sales <= 1999:
-        return (sales ** .08)
+        return (sales * .08)
     else:
         return 'Invalid input'
 
@@ -54,10 +54,14 @@ ataD gnirtS yM
 CREATE A TEST CASE IN THE exam_test.py file.
 '''
 def reverse_string(string1):
-    while string1 > 1:
-    reversedstring = string1[::-1]
-    return (reversedstring)
+    index = len(string1)-1
+    return_string = ''
 
+    while index > -1:
+        return_string += string1[index]
+        index -= 1
+
+    return return_string
 
 
 
@@ -72,11 +76,7 @@ Returns:
 CREATE A TEST CASE IN THE exam_test.py file.
 '''
 def get_list_min_max(list1):
-    lista = int(input('Enter list: '))
-    minlist = min(lista)
-    maxlist = max(lista)
-    return(minlist, maxlist)
-
+    return  [min(list1[1:]), max(list1[1:])]
 
 '''
 25 points
@@ -93,10 +93,18 @@ Return Value:
 [2,89]
 '''
 def get_list_min_max_file():
-    file = open('quiz.dat','r')
-    lista = []
+    file = open('quiz.dat', 'r')
+    tmp_list = []
+
     for line in file:
-        list1 = line.split('         ')
-        minlist = min(lista)
-        maxlist = max(lista)
-    return lista
+        list1 = line.split()
+        i = 0
+        while i < len(list1):
+            if list1[i].isdigit():
+                list1[i] = int(list1[i])
+            i += 1
+
+        tmp_list += get_list_min_max(list1)
+
+    file.close()
+    return get_list_min_max(tmp_list)

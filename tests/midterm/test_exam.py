@@ -9,7 +9,7 @@ class Test_Midterm(unittest.TestCase):
         5 points
         Test with arguments kilometers 32 and minutes 60 return value should be 19.883872
         '''
-        self.assertEqual(19.883872, 32, 60)
+        self.assertEqual(19.883872, get_miles_per_hour(32, 60))
 
 
     def test_get_bonus_pay_amount_w_good_value (self):
@@ -17,7 +17,7 @@ class Test_Midterm(unittest.TestCase):
         5 points
         Test with value 1000 return value should be 70
         '''
-        self.assertEqual(70, 1000)
+        self.assertEqual(70, get_bonus_pay_amount(1000))
 
 
     def test_get_bonus_pay_amount_w_bad_value(self):
@@ -25,7 +25,7 @@ class Test_Midterm(unittest.TestCase):
         5 points
         Test with -5 return value should be 'Invalid arguments'
         '''
-        self.assertEqual('Invalid arguements', -5)
+        self.assertEqual('Invalid arguements', get_bonus_pay_amount(-5))
 
 
 
@@ -34,7 +34,7 @@ class Test_Midterm(unittest.TestCase):
         5 points
         Test with value My String Data return value should be ataD gnirtS yM
         '''
-        self.assertEqual('ataD gnirtS yM', 'My String Data')
+        self.assertEqual('ataD gnirtS yM', reverse_string('My String Data'))
 
 
     def test_get_list_min_max(self):
@@ -42,7 +42,7 @@ class Test_Midterm(unittest.TestCase):
         5 points
         Test with ['joe', 10, 15, 20, 30, 40]    Returns:    [10, 40]
         '''
-        self.assertEqual([10,40], ['joe, 10, 15, 20, 30, 40'])
+        self.assertEqual([10,40], get_list_min_max(['joe, 10, 15, 20, 30, 40']))
 
 
     def test_get_list_min_max_file(self):
@@ -50,6 +50,6 @@ class Test_Midterm(unittest.TestCase):
         5 points
         Test with quiz.data file the return value should be [2,89]
         '''
-        self.assertEqual([2,89],[89, 10, 15, 20, 30, 40, 23, 16, 19, 22, 22, 17, 14, 32, 17, 24, 21, 2, 9, 17, 12, 28, 21, 45, 26, 10, 11, 14, 32, 25, 16, 9] ) 
+        self.assertEqual([2,89],get_list_min_max_file()) 
     
-unittest.main(verbosity=2)
+#unittest.main(verbosity=2)
